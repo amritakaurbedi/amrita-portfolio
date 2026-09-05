@@ -218,7 +218,7 @@ p  { margin-top: 0; }
 /* --- work: timeline --------------------------------------- */
 .track { position: relative; padding-left: 160px; }
 .track::before {
-  position: absolute; top: 10px; bottom: 10px; left: 118px; width: 1px;
+  position: absolute; top: 10px; bottom: 10px; left: 150px; width: 1px;
   background: linear-gradient(var(--gold), rgba(186, 122, 58, .12)); content: "";
 }
 .entry { position: relative; margin-bottom: 20px; }
@@ -228,7 +228,7 @@ p  { margin-top: 0; }
   color: var(--rose); font-size: .8rem; font-weight: 500; text-align: right;
 }
 .entry::before {
-  position: absolute; top: 27px; left: -46px; z-index: 2; width: 9px; height: 9px;
+  position: absolute; top: 27px; left: -14px; z-index: 2; width: 9px; height: 9px;
   border: 1.5px solid var(--gold); border-radius: 50%; background: var(--white); content: "";
 }
 .entry:hover::before, .entry:focus-within::before { border-color: var(--coral); background: var(--coral); }
