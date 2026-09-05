@@ -81,8 +81,10 @@ PROJECTS = [
         "dates": "April 2026 \u2013 June 2026",
         "sort": "2026-04",
         "kind": "Design project",
-        "summary": "A new forceps concept taken from sketch to tested prototype, optimised for "
-                   "grip force, manufacturability, and the ergonomics of a one-handed procedure.",
+        "summary": "Redesigned cervical biopsy forceps through CAD, prototyping, simulation, "
+                   "and testing, and documented the design decisions, materials, manufacturing "
+                   "considerations, test results, and cost analysis in a comprehensive "
+                   "engineering report.",
         "skills": ["solidworks", "drawings", "validation", "techcomm"],
         "context": "Cervical biopsy forceps have changed very little in decades, and the "
                    "existing designs ask a lot of the clinician's hand. The brief was to rethink "
