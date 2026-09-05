@@ -147,7 +147,7 @@ def build_index():
       <div class="lead-copy">
         <ul class="lead-list">{did}</ul>
         <div class="tags">{skill_links}</div>
-        <a class="entry-more" href="{p['slug']}.html">Read the full internship</a>
+        <a class="entry-more" href="{p['slug']}.html">Read about the full internship</a>
       </div>
     </div>"""
 
