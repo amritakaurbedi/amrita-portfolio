@@ -8,12 +8,15 @@ SKILL_GROUPS = [
         ("printing", "3D Printing"),
         ("pcb", "PCB Design"),
         ("microfluidics", "Microfluidics"),
+        ("prototyping", "Prototyping"),
+        ("dfm", "DFM"),
     ]),
     ("Testing & Product Development", [
         ("benchtop", "Benchtop Testing"),
         ("calibration", "Sensor Calibration"),
         ("daq", "Data Acquisition"),
         ("validation", "Design Validation"),
+        ("optimization", "Design Optimization"),
     ]),
     ("Programming & Data Analysis", [
         ("python", "Python"),
@@ -34,6 +37,7 @@ SKILL_GROUPS = [
         ("presenting", "Technical Presentations"),
         ("mentoring", "Mentoring & Program Development"),
         ("techcomm", "Technical Communication"),
+        ("documentation", "Engineering Documentation"),
     ]),
 ]
 
@@ -85,7 +89,7 @@ PROJECTS = [
                    "and testing, and documented the design decisions, materials, manufacturing "
                    "considerations, test results, and cost analysis in a comprehensive "
                    "engineering report.",
-        "skills": ["solidworks", "drawings", "validation", "techcomm"],
+        "skills": ["solidworks", "prototyping", "optimization", "documentation", "dfm"],
         "context": "Cervical biopsy forceps have changed very little in decades, and the "
                    "existing designs ask a lot of the clinician's hand. The brief was to rethink "
                    "the jaw and handle geometry without making the device harder to manufacture.",
