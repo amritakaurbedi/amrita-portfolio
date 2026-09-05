@@ -126,7 +126,7 @@ def build_index():
             <h3>{e(p['short'])}</h3>
             <p class="entry-org">{sub(p)}</p>
             <p>{e(p['summary'])}</p>
-            {tags_html(p['skills'], 4)}
+            {tags_html(p['skills'], 5)}
             <span class="entry-more">Read more</span>
           </a>
         </article>"""
