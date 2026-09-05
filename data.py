@@ -112,8 +112,10 @@ PROJECTS = [
         "dates": "January 2026 \u2013 June 2026",
         "sort": "2026-01",
         "kind": "Collaboration",
-        "summary": "Measured laparoscopic tool\u2013tissue interaction forces, then rebuilt the whole "
-                   "method into a lab module that undergraduates now run themselves.",
+        "summary": "Created a biomedical engineering lab module that teaches experimental design "
+                   "and regulatory compliance through hands-on device testing, using laparoscopic "
+                   "trainers to assess performance against ISO 7741, and published the work in a "
+                   "conference paper.",
         "skills": ["benchtop", "daq", "arduino", "controls", "sop", "techcomm"],
         "context": "A test protocol is only useful if someone else can repeat it. This project "
                    "started as force measurement on laparoscopic instruments and ended as an "
