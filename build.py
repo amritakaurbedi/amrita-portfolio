@@ -127,7 +127,7 @@ def build_index():
             <p class="entry-org">{sub(p)}</p>
             <p>{e(p['summary'])}</p>
             {tags_html(p['skills'], 4)}
-            <span class="entry-more">Read the full project</span>
+            <span class="entry-more">Read more</span>
           </a>
         </article>"""
 
@@ -147,7 +147,7 @@ def build_index():
       <div class="lead-copy">
         <ul class="lead-list">{did}</ul>
         <div class="tags">{skill_links}</div>
-        <a class="entry-more" href="{p['slug']}.html">Read about the full internship</a>
+        <a class="entry-more" href="{p['slug']}.html">Read more</a>
       </div>
     </div>"""
 
