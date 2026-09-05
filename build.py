@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Generate index.html and one detail page per project from data.py."""
-import os, html
+import os, html, re
 from data import PROJECTS, SKILL_GROUPS, SKILL_NAMES, LEAD_SKILLS
 
 OUT = os.path.dirname(os.path.abspath(__file__))
@@ -9,6 +9,15 @@ LINKEDIN = "https://www.linkedin.com/in/amritakaurbedi"
 RESUME = "assets/Amrita_Kaur_Bedi_Resume.pdf"
 
 e = html.escape
+
+
+MONTHS = ("January|February|March|April|May|June|July|August|September|"
+          "October|November|December")
+
+
+def date_html(s):
+    # keep a month glued to its year when the date range wraps onto two lines
+    return re.sub(rf"({MONTHS}) (\d{{4}})", "\\1 \\2", e(s))
 
 
 def head(title, desc, rel=""):
@@ -120,7 +129,7 @@ def build_index():
     for p in sorted(work, key=lambda x: x["sort"], reverse=True):
         entries += f"""
         <article class="entry" data-skills="{' '.join(p['skills'])}">
-          <p class="entry-date">{e(p['dates'])}</p>
+          <p class="entry-date">{date_html(p['dates'])}</p>
           <a class="entry-card" href="{p['slug']}.html">
             <p class="entry-kind">{e(p['kind'])}</p>
             <h3>{e(p['short'])}</h3>
