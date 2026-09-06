@@ -226,10 +226,9 @@ PROJECTS = [
         "dates": "September 2025 – December 2025",
         "sort": "2025-09",
         "kind": "Course project",
-        "summary": "A reproducible MATLAB workflow predicting preeclampsia risk — three models "
-                   "(random forest, gradient boosting, SVM) preprocessed, tuned, and compared on a "
-                   "clinical dataset.",
-        "skills": ["matlab", "stats", "ml"],
+        "summary": "Built and compared three MATLAB machine-learning models to predict "
+                   "preeclampsia risk from clinical data.",
+        "skills": ["matlab", "ml", "dataanalysis", "stats", "dataviz"],
         "context": "Clinical risk prediction is only useful if the pipeline behind it is honest "
                    "and repeatable. The work was less about any one model and more about building "
                    "a workflow whose numbers could be trusted and rerun.",
