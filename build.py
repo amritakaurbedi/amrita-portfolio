@@ -242,7 +242,7 @@ def build_index():
         <p class="meta">BMES Project Coordinator &middot; Co-Founder, MedTech Founders Program &middot; 2025&ndash;Present</p>
         <p class="measure">I started the MedTech Founders Program because undergraduates at UCI had plenty of ideas about healthcare and no structured route from an unmet need to a working prototype. It now runs as a mentored pipeline, and three of the teams have reached the semifinals of UCI entrepreneurship competitions.</p>
         <div class="metrics">
-          <div><strong>20+</strong><span>students mentored from concept to prototype</span></div>
+          <div><strong>13</strong><span>teams mentored</span></div>
           <div><strong>50+</strong><span>undergraduates through the workshops</span></div>
           <div><strong>3</strong><span>teams into competition semifinals</span></div>
         </div>
