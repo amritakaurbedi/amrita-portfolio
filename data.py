@@ -27,6 +27,7 @@ SKILL_GROUPS = [
         ("ml", "Machine Learning"),
         ("dataanalysis", "Data Analysis"),
         ("dataviz", "Data Visualization"),
+        ("datapreprocessing", "Data Preprocessing"),
     ]),
     ("Quality & Regulatory", [
         ("capa", "CAPA"),
@@ -226,9 +227,10 @@ PROJECTS = [
         "dates": "September 2025 – December 2025",
         "sort": "2025-09",
         "kind": "Course project",
-        "summary": "Built and compared three MATLAB machine-learning models to predict "
-                   "preeclampsia risk from clinical data.",
-        "skills": ["matlab", "ml", "dataanalysis", "stats", "dataviz"],
+        "summary": "Preprocessed clinical data and built and compared three MATLAB "
+                   "machine-learning models (Random Forest, Gradient Boosting, and SVM) to "
+                   "predict preeclampsia risk.",
+        "skills": ["matlab", "ml", "datapreprocessing", "dataanalysis", "stats"],
         "context": "Clinical risk prediction is only useful if the pipeline behind it is honest "
                    "and repeatable. The work was less about any one model and more about building "
                    "a workflow whose numbers could be trusted and rerun.",
