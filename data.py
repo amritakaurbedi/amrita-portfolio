@@ -17,6 +17,7 @@ SKILL_GROUPS = [
         ("daq", "Data Acquisition"),
         ("validation", "Design Validation"),
         ("optimization", "Design Optimization"),
+        ("expdesign", "Experimental Design"),
     ]),
     ("Programming & Data Analysis", [
         ("python", "Python"),
@@ -24,12 +25,14 @@ SKILL_GROUPS = [
         ("arduino", "Arduino"),
         ("stats", "Statistical Analysis"),
         ("ml", "Machine Learning"),
+        ("dataanalysis", "Data Analysis"),
     ]),
     ("Quality & Regulatory", [
         ("capa", "CAPA"),
         ("rca", "Root Cause Analysis"),
         ("controls", "FDA Design Controls"),
         ("sop", "SOP Development"),
+        ("regcompliance", "Regulatory Compliance"),
     ]),
     ("Leadership & Communication", [
         ("leadership", "Team Leadership"),
@@ -38,6 +41,7 @@ SKILL_GROUPS = [
         ("mentoring", "Mentoring & Program Development"),
         ("techcomm", "Technical Communication"),
         ("documentation", "Engineering Documentation"),
+        ("techwriting", "Technical Writing"),
     ]),
 ]
 
@@ -116,7 +120,7 @@ PROJECTS = [
                    "and regulatory compliance through hands-on device testing, using laparoscopic "
                    "trainers to assess performance against ISO 7741, and published the work in a "
                    "conference paper.",
-        "skills": ["benchtop", "daq", "arduino", "controls", "sop", "techcomm"],
+        "skills": ["expdesign", "benchtop", "regcompliance", "dataanalysis", "techwriting"],
         "context": "A test protocol is only useful if someone else can repeat it. This project "
                    "started as force measurement on laparoscopic instruments and ended as an "
                    "ABET-accredited teaching module \u2014 which meant every step had to survive "
