@@ -28,6 +28,7 @@ SKILL_GROUPS = [
         ("dataanalysis", "Data Analysis"),
         ("dataviz", "Data Visualization"),
         ("datapreprocessing", "Data Preprocessing"),
+        ("imageanalysis", "Image Analysis"),
     ]),
     ("Quality & Regulatory", [
         ("capa", "CAPA"),
@@ -44,6 +45,7 @@ SKILL_GROUPS = [
         ("techcomm", "Technical Communication"),
         ("documentation", "Engineering Documentation"),
         ("techwriting", "Technical Writing"),
+        ("scientificwriting", "Scientific Writing"),
     ]),
 ]
 
@@ -176,9 +178,12 @@ PROJECTS = [
         "dates": "April 2025 \u2013 Present",
         "sort": "2025-04",
         "kind": "Research",
-        "summary": "Quantified cytoskeletal disruption in lung cancer cells after CSRP1 knockdown "
-                   "across 20+ morphology parameters \u2014 actin disorganisation at p < 0.0001.",
-        "skills": ["python", "stats", "presenting"],
+        "summary": "Investigated how CSRP1 affects lung cancer cell structure, transitioning "
+                   "from wet-lab research to quantitative image analysis and building Python "
+                   "pipelines for cell morphology and lipid\u2013mitochondria colocalization. "
+                   "Presented the work at National BMES for two consecutive years and "
+                   "contributed to two manuscripts in preparation.",
+        "skills": ["python", "imageanalysis", "stats", "dataviz", "scientificwriting"],
         "context": "Immunofluorescence images are easy to look at and hard to measure. Most of "
                    "this work was building the measurement layer \u2014 turning a folder of images "
                    "into numbers that hold up to a statistical test.",
