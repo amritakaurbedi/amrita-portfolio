@@ -21,6 +21,7 @@ SKILL_GROUPS = [
         ("validation", "Design Validation"),
         ("optimization", "Design Optimization"),
         ("expdesign", "Experimental Design"),
+        ("testing", "Testing"),
     ]),
     ("Programming & Data Analysis", [
         ("python", "Python"),
@@ -324,10 +325,10 @@ PROJECTS = [
         "dates": "September 2024 – December 2024",
         "sort": "2024-09",
         "kind": "Team project",
-        "summary": "Full mechanical design and test cycle of an RC rover — SolidWorks "
-                   "assemblies and Ackermann steering geometry that improved steering performance "
-                   "by 20%.",
-        "skills": ["solidworks", "leadership"],
+        "summary": "Led a seven-person team through the rover project and took primary "
+                   "responsibility for the final technical report, documenting the design "
+                   "process, testing, and performance improvements.",
+        "skills": ["leadership", "techwriting", "documentation", "testing", "solidworks"],
         "context": "First engineering team I led. The rover was the vehicle for learning how to "
                    "run a seven-person design cycle — from concept models to a rig you can "
                    "actually drive and measure.",
