@@ -120,8 +120,8 @@ PROJECTS = [
         "kind": "Collaboration",
         "summary": "Created a biomedical engineering lab module that teaches experimental design "
                    "and regulatory compliance through hands-on device testing, using laparoscopic "
-                   "trainers to assess performance against ISO 7741, and published the work in a "
-                   "conference paper.",
+                   "trainers to assess performance against ISO 7741, and published the work in "
+                   "the American Society for Engineering Education (ASEE) conference paper.",
         "skills": ["expdesign", "benchtop", "regcompliance", "dataanalysis", "techwriting"],
         "context": "A test protocol is only useful if someone else can repeat it. This project "
                    "started as force measurement on laparoscopic instruments and ended as an "
