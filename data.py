@@ -10,6 +10,7 @@ SKILL_GROUPS = [
         ("microfluidics", "Microfluidics"),
         ("prototyping", "Prototyping"),
         ("dfm", "DFM"),
+        ("meddevice", "Medical Device Design"),
     ]),
     ("Testing & Product Development", [
         ("benchtop", "Benchtop Testing"),
@@ -36,6 +37,7 @@ SKILL_GROUPS = [
         ("controls", "FDA Design Controls"),
         ("sop", "SOP Development"),
         ("regcompliance", "Regulatory Compliance"),
+        ("riskanalysis", "Risk Analysis"),
     ]),
     ("Leadership & Communication", [
         ("leadership", "Leadership"),
@@ -46,6 +48,11 @@ SKILL_GROUPS = [
         ("documentation", "Engineering Documentation"),
         ("techwriting", "Technical Writing"),
         ("scientificwriting", "Scientific Writing"),
+        ("pitching", "Pitching"),
+    ]),
+    ("Business & Entrepreneurship", [
+        ("entrepreneurship", "Entrepreneurship"),
+        ("bizstrategy", "Business Strategy"),
     ]),
 ]
 
@@ -289,10 +296,10 @@ PROJECTS = [
         "dates": "March 2025",
         "sort": "2025-03",
         "kind": "Competition",
-        "summary": "Pitched SeraSwaddle, a neonatal hypothermia treatment device — 2nd in the "
-                   "Mechanical/Electrical track, with a business plan, design specs, and a "
-                   "510(k)-aligned risk strategy.",
-        "skills": ["controls", "presenting"],
+        "summary": "Led the go-to-market strategy for SeraSwaddle, a neonatal warming device "
+                   "concept, pitched the project and won 2nd place in UCI's OPEN MIC "
+                   "competition.",
+        "skills": ["entrepreneurship", "bizstrategy", "pitching", "riskanalysis", "meddevice"],
         "context": "OPEN MIC asks for a real unmet need and a credible route to a device. Neonatal "
                    "hypothermia is a large, under-addressed problem in low-resource settings, and "
                    "the pitch had to hold up on both the clinical and the regulatory side.",
