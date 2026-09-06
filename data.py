@@ -11,6 +11,8 @@ SKILL_GROUPS = [
         ("prototyping", "Prototyping"),
         ("dfm", "DFM"),
         ("meddevice", "Medical Device Design"),
+        ("lasercutting", "Laser Cutting"),
+        ("pdms", "PDMS Fabrication"),
     ]),
     ("Testing & Product Development", [
         ("benchtop", "Benchtop Testing"),
@@ -269,9 +271,10 @@ PROJECTS = [
         "dates": "January 2025 – March 2025",
         "sort": "2025-01",
         "kind": "Team project",
-        "summary": "A low-cost microfluidic device for rapid fluorescence quantification in "
-                   "biomedical assays, with Arduino-based control and sensing and an OLED readout.",
-        "skills": ["printing", "microfluidics", "arduino", "leadership"],
+        "summary": "Developed a low-cost microfluidic device for fluorescence quantification, "
+                   "integrating Arduino-based sensing and controls with custom components "
+                   "fabricated through laser cutting, 3D printing, and PDMS.",
+        "skills": ["microfluidics", "arduino", "lasercutting", "printing", "pdms"],
         "context": "Fluorescence readers are expensive. StarChip was an attempt to hit a usable "
                    "signal at a fraction of the cost, using laser-cut and 3D-printed parts, PDMS "
                    "channels, and off-the-shelf electronics.",
