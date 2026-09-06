@@ -198,9 +198,9 @@ PROJECTS = [
         "dates": "September 2025 – December 2025",
         "sort": "2025-09",
         "kind": "Team project",
-        "summary": "A simplified ultrasound-style ranging system — ultrasonic sensing, a servo "
-                   "sweep, and real-time MATLAB visualisation building a 180° map of nearby "
-                   "objects. Placed 2nd of 19 teams.",
+        "summary": "Led a four-person team in building an Arduino-based ultrasonic scanning "
+                   "system that converted sensor measurements into a real-time 180° spatial map "
+                   "and earned 2nd place out of 19 teams.",
         "skills": ["matlab", "arduino", "leadership"],
         "context": "The goal was to reproduce the core idea of ultrasound imaging — sweep a "
                    "beam, time the echoes, build a picture — with hobby hardware, and to lead a "
