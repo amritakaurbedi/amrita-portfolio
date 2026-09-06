@@ -26,6 +26,7 @@ SKILL_GROUPS = [
         ("stats", "Statistical Analysis"),
         ("ml", "Machine Learning"),
         ("dataanalysis", "Data Analysis"),
+        ("dataviz", "Data Visualization"),
     ]),
     ("Quality & Regulatory", [
         ("capa", "CAPA"),
@@ -35,7 +36,7 @@ SKILL_GROUPS = [
         ("regcompliance", "Regulatory Compliance"),
     ]),
     ("Leadership & Communication", [
-        ("leadership", "Team Leadership"),
+        ("leadership", "Leadership"),
         ("xfn", "Cross-Functional Collaboration"),
         ("presenting", "Technical Presentations"),
         ("mentoring", "Mentoring & Program Development"),
@@ -201,7 +202,7 @@ PROJECTS = [
         "summary": "Led a four-person team in building an Arduino-based ultrasonic scanning "
                    "system that converted sensor measurements into a real-time 180° spatial map "
                    "and earned 2nd place out of 19 teams.",
-        "skills": ["matlab", "arduino", "leadership"],
+        "skills": ["arduino", "matlab", "daq", "dataviz", "leadership"],
         "context": "The goal was to reproduce the core idea of ultrasound imaging — sweep a "
                    "beam, time the echoes, build a picture — with hobby hardware, and to lead a "
                    "four-person team through it on a fixed deadline.",
