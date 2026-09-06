@@ -149,7 +149,8 @@ PROJECTS = [
         "kind": "Hardware",
         "summary": "Developing a novel suturing technique to address postpartum hemorrhage, "
                    "while leading development and optimization of the pressure-sensing system "
-                   "used to test the design.",
+                   "used to test the design. Presented the work at the National BMES Conference "
+                   "for two consecutive years.",
         "skills": ["matlab", "calibration", "benchtop", "pcb", "leadership"],
         "context": "Building the sensor was the easy half. The harder half was characterising it "
                    "honestly: resolution, repeatability, signal-to-noise, and residual error, "
