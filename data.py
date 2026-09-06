@@ -147,9 +147,10 @@ PROJECTS = [
         "dates": "May 2025 \u2013 Present",
         "sort": "2025-05",
         "kind": "Hardware",
-        "summary": "Custom PCB pressure sensor for biomedical force monitoring \u2014 0\u2013183 kPa, "
-                   "R\u00b2 = 0.997, 0.20 kPa resolution, 26.5 dB SNR.",
-        "skills": ["pcb", "calibration", "daq", "matlab", "sop", "presenting"],
+        "summary": "Developing a novel suturing technique to address postpartum hemorrhage, "
+                   "while leading development and optimization of the pressure-sensing system "
+                   "used to test the design.",
+        "skills": ["matlab", "calibration", "benchtop", "pcb", "leadership"],
         "context": "Building the sensor was the easy half. The harder half was characterising it "
                    "honestly: resolution, repeatability, signal-to-noise, and residual error, "
                    "documented well enough that someone else could trust the numbers.",
