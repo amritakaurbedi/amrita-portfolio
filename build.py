@@ -275,7 +275,7 @@ def build_index():
         <p class="measure">This year, I&rsquo;m stepping into a new challenge as Kathak Captain, taking on choreography and creative direction for the first time while leading rehearsals, teaching dancers, and guiding the team through competition season.</p>
         <div class="metrics">
           <div><strong>Age 4</strong><span>started training in dance</span></div>
-          <div><strong>3 years</strong><span>Kathak certification with First Division Distinction</span></div>
+          <div><strong>3 years</strong><span>Kathak certification with First Division and Distinction</span></div>
           <div><strong>3&times;</strong><span>second-place competition finishes</span></div>
           <div><strong>Top 8</strong><span>at Origins: the national Indian classical dance competition</span></div>
         </div>
