@@ -239,13 +239,13 @@ def build_index():
     <div class="lead-grid">
       <div class="lead-copy">
         <h2>MedTech Founders Program</h2>
-        <p class="meta">BMES Project Coordinator &middot; Co-Founder, MedTech Founders Program &middot; 2025&ndash;Present</p>
+        <p class="meta">BMES Project Coordinator &middot; 2025&ndash;Present</p>
         <p class="measure">What started on a whiteboard became the MedTech Founders Program (MFP): a year-long product development pipeline helping undergraduate biomedical engineers turn ideas into medical innovations across Ideation, Business, and Prototyping. Coming into college, my co-leads and I saw a lack of support for students who wanted to build something of their own in the medical device space. As BMES Project Coordinators, we created MFP from the ground up to fill that gap.</p>
         <div class="metrics">
           <div><strong>13</strong><span>teams mentored</span></div>
           <div><strong>$2,435</strong><span>secured in program funding</span></div>
           <div><strong>3</strong><span>teams advanced to UCI entrepreneurship competition semifinals</span></div>
-          <div><strong>50+</strong><span>students reached</span></div>
+          <div><strong>50+</strong><span>students reached through workshops</span></div>
         </div>
       </div>
       <div>
