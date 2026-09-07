@@ -174,9 +174,9 @@ def build_index():
   <div class="hero-orbit orbit-two" aria-hidden="true"></div>
   <div class="container hero-grid">
     <div>
-      <h1>Hi, I&rsquo;m Amrita.</h1>
+      <h1>Hi, I am Amrita.</h1>
       <p class="hero-role">What excites me most about engineering is the opportunity to make something better and see the impact it has on people.</p>
-      <p class="hero-note">I love working with people just as much as I love solving technical problems, and I&rsquo;m especially drawn to projects where I can take ownership, collaborate across different perspectives, and turn an idea or challenge into something real. From medical device development and quality investigations to cancer research and student entrepreneurship, I&rsquo;m constantly looking for new ways to learn from others, understand healthcare challenges, and contribute to meaningful solutions.</p>
+      <p class="hero-note">I love working with people just as much as I love solving technical problems, and I am especially drawn to projects where I can take ownership, collaborate across different perspectives, and turn an idea or challenge into something real. From medical device development and quality investigations to cancer research and student entrepreneurship, I am constantly looking for new ways to learn from others, understand healthcare challenges, and contribute to meaningful solutions.</p>
       <div class="hero-actions">
         <a class="button button-primary" href="#industry">View My Work</a>
         <a class="button button-secondary" href="{RESUME}" target="_blank" rel="noopener">Resume (PDF)</a>
@@ -214,7 +214,7 @@ def build_index():
     <div class="work-head">
       <div>
         <h2>Projects</h2>
-        <p>Browse my projects from most recent to earliest, or filter by the skills you&rsquo;re interested in.</p>
+        <p>Browse my projects from most recent to earliest, or filter by the skills you are interested in.</p>
       </div>
     </div>
 
@@ -271,8 +271,8 @@ def build_index():
       <div class="lead-copy">
         <h2>Kathak and UCI Avahita</h2>
         <p class="meta">Dancer 2024&ndash;2026 &middot; Kathak Captain 2026&ndash;Present &middot; Competitive Indian Classical Dance Team</p>
-        <p class="measure">I&rsquo;ve loved dancing for as long as I can remember! I started training in Kathak at four and earned a three-year certification with First Division and Distinction before joining UCI Avahita, UCI&rsquo;s collegiate classical dance team. Over two competition seasons, we earned three second-place finishes and reached the national top eight at Origins in our first year competing.</p>
-        <p class="measure">This year, I&rsquo;m stepping into a new challenge as Kathak Captain, taking on choreography and creative direction for the first time while leading rehearsals, teaching dancers, and guiding the team through competition season.</p>
+        <p class="measure">I have loved dancing for as long as I can remember! I started training in Kathak at four and earned a three-year certification with First Division and Distinction before joining UCI Avahita, UCI&rsquo;s collegiate classical dance team. Over two competition seasons, we earned three second-place finishes and reached the national top eight at Origins in our first year competing.</p>
+        <p class="measure">This year, I am stepping into a new challenge as Kathak Captain, taking on choreography and creative direction for the first time while leading rehearsals, teaching dancers, and guiding the team through competition season.</p>
         <div class="metrics">
           <div><strong>Age 4</strong><span>started training in dance</span></div>
           <div><strong>3 years</strong><span>Kathak certification with First Division and Distinction</span></div>
