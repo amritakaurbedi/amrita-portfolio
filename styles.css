@@ -270,7 +270,14 @@ p  { margin-top: 0; }
 .lead-list li { border-bottom: 1px solid rgba(253, 239, 226, .22); padding: 14px 0; color: rgba(253, 239, 226, .82); font-size: .95rem; }
 .lead-list b { color: var(--cream); font-weight: 550; }
 .lead-photos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 28px; }
-.lead-photos img { width: 100%; height: 190px; object-fit: cover; border-radius: 8px; display: block; }
+.lead-photos figure { position: relative; margin: 0; border-radius: 8px; overflow: hidden; }
+.lead-photos img { width: 100%; height: 190px; object-fit: cover; display: block; }
+.lead-photos figcaption {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  padding: 12px; text-align: center; font-size: .9rem; font-weight: 550; color: var(--cream);
+  background: rgba(58, 26, 40, .68); opacity: 0; transition: opacity .25s ease;
+}
+.lead-photos figure:hover figcaption, .lead-photos figure:focus-within figcaption { opacity: 1; }
 @media (max-width: 760px) {
   .lead-photos img { height: 160px; }
 }

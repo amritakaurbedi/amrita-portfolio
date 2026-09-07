@@ -256,10 +256,10 @@ def build_index():
           <li><b>Workshops &amp; Operations</b>: plan technical workshops, design reviews, and competitions while writing funding proposals and coordinating the resources needed to keep the program running.</li>
         </ul>
         <div class="lead-photos">
-          <img src="assets/mfp-1.jpg" alt="Amrita presenting the MedTech Founders purchase request workflow to students" loading="lazy">
-          <img src="assets/mfp-2.jpg" alt="Group photo at the BMES Open MIC Medical Innovation Competition" loading="lazy">
-          <img src="assets/mfp-3.jpg" alt="Group photo at the VITAL Prototype Showcase" loading="lazy">
-          <img src="assets/mfp-4.jpg" alt="Amrita with MedTech Founders Program teammates at a whiteboard planning session" loading="lazy">
+          <figure><img src="assets/mfp-1.jpg" alt="Amrita presenting the MedTech Founders purchase request workflow to students" loading="lazy"><figcaption>Program workshop</figcaption></figure>
+          <figure><img src="assets/mfp-2.jpg" alt="Group photo at the BMES Open MIC Medical Innovation Competition" loading="lazy"><figcaption>OPEN MIC</figcaption></figure>
+          <figure><img src="assets/mfp-3.jpg" alt="Group photo at the VITAL Prototype Showcase" loading="lazy"><figcaption>VITAL Prototype Showcase</figcaption></figure>
+          <figure><img src="assets/mfp-4.jpg" alt="Amrita with MedTech Founders Program teammates at a whiteboard planning session" loading="lazy"><figcaption>Where MFP started</figcaption></figure>
         </div>
       </div>
     </div>
