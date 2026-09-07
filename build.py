@@ -276,7 +276,7 @@ def build_index():
           <div><strong>Age 4</strong><span>started training in dance</span></div>
           <div><strong>3 years</strong><span>Kathak certification with First Division Distinction</span></div>
           <div><strong>3&times;</strong><span>second-place competition finishes</span></div>
-          <div><strong>Top 8</strong><span>nationally at Origins</span></div>
+          <div><strong>Top 8</strong><span>at Origins: the national Indian classical dance competition</span></div>
         </div>
       </div>
       <div>
