@@ -91,6 +91,8 @@ p  { margin-top: 0; }
   font-weight: 550;
   letter-spacing: .01em;
 }
+.meta-tight { letter-spacing: 0; white-space: nowrap; font-size: .74rem; }
+@media (max-width: 720px) { .meta-tight { white-space: normal; font-size: clamp(.64rem, 2.5vw, .74rem); } }
 
 /* --- header ----------------------------------------------- */
 .site-header {
