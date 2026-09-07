@@ -270,8 +270,8 @@ def build_index():
   <div class="container">
     <div class="lead-grid">
       <div class="lead-copy">
-        <h2>Kathak with UCI Avahita</h2>
-        <p class="meta">Captain &middot; UCI Avahita Classical Dance &middot; 2024&ndash;present</p>
+        <h2>Kathak and UCI Avahita</h2>
+        <p class="meta">Dancer 2024&ndash;2026 &middot; Kathak Captain 2026&ndash;Present &middot; Competitive Indian Classical Dance Team</p>
         <p class="measure">I&rsquo;ve trained in Kathak for years, and at UCI I captain Avahita, the classical dance team. We compete on the intercollegiate circuit &mdash; two second-place finishes this season and a place in the national top eight for Origins, the collegiate classical dance championship.</p>
         <div class="metrics">
           <div><strong>Top 8</strong><span>nationally at Origins</span></div>
