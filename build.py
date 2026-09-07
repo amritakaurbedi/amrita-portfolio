@@ -245,7 +245,7 @@ def build_index():
         <div class="metrics">
           <div><strong>13</strong><span>teams mentored</span></div>
           <div><strong>$2,435</strong><span>secured in program funding</span></div>
-          <div><strong>3</strong><span>teams reached UCI competition semifinals</span></div>
+          <div><strong>3</strong><span>teams advanced to UCI entrepreneurship competition semifinals</span></div>
           <div><strong>50+</strong><span>students reached</span></div>
         </div>
       </div>
