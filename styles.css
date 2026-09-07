@@ -260,6 +260,8 @@ p  { margin-top: 0; }
 .lead-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
 .lead-copy > p { color: rgba(253, 239, 226, .82); }
 .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 28px 0 26px; }
+.lead-copy .metrics { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 760px) { .lead-copy .metrics { grid-template-columns: repeat(2, 1fr); } }
 .metrics div { border-top: 1px solid rgba(253, 239, 226, .3); padding-top: 14px; }
 .metrics strong { display: block; color: var(--cream); font-family: var(--display); font-size: 2.1rem; font-weight: 420; font-variation-settings: "SOFT" 20, "WONK" 1, "opsz" 40; }
 .metrics span { color: rgba(253, 239, 226, .66); font-size: .82rem; line-height: 1.35; }
