@@ -272,7 +272,7 @@ def build_index():
         <h2>Kathak and UCI Avahita</h2>
         <p class="meta">Dancer 2024&ndash;2026 &middot; Kathak Captain 2026&ndash;Present &middot; Competitive Indian Classical Dance Team</p>
         <p class="measure">I have loved dancing for as long as I can remember! I started training in Kathak at four and earned a three-year certification with First Division and Distinction before joining UCI Avahita, UCI&rsquo;s collegiate classical dance team. Over two competition seasons, we earned three second-place finishes and reached the national top eight at Origins in our first year competing.</p>
-        <p class="measure">This year, I am stepping into a new challenge as Kathak Captain, taking on choreography and creative direction for the first time while leading rehearsals, teaching dancers, and guiding the team through competition season.</p>
+        <p class="measure">This year, I am stepping into a new challenge as Kathak Captain, taking on choreography and creative direction for the first time.</p>
         <div class="metrics">
           <div><strong>Age 4</strong><span>started training in dance</span></div>
           <div><strong>3 years</strong><span>Kathak certification with First Division and Distinction</span></div>
