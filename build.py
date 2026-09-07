@@ -251,9 +251,9 @@ def build_index():
       </div>
       <div>
         <ul class="lead-list">
-          <li><b>Program Development</b> &mdash; co-created the year-long program structure, building a path from clinical need identification through business development and prototyping.</li>
-          <li><b>Coordination &amp; Mentorship</b> &mdash; coordinate student teams, faculty, graduate students, and industry mentors to provide technical and entrepreneurial feedback throughout the year.</li>
-          <li><b>Workshops &amp; Operations</b> &mdash; plan technical workshops, design reviews, competitions, and hands-on events, while writing funding proposals and coordinating the logistics and resources needed to keep the program running.</li>
+          <li><b>Program Development</b>: co-created the year-long program structure, building a path from clinical need identification through business development and prototyping.</li>
+          <li><b>Coordination &amp; Mentorship</b>: coordinate student teams, faculty, graduate students, and industry mentors to provide technical and entrepreneurial feedback throughout the year.</li>
+          <li><b>Workshops &amp; Operations</b>: plan technical workshops, design reviews, and competitions while writing funding proposals and coordinating the resources needed to keep the program running.</li>
         </ul>
         <div class="lead-photos">
           <img src="assets/mfp-1.jpg" alt="Amrita presenting the MedTech Founders purchase request workflow to students" loading="lazy">
