@@ -285,6 +285,12 @@ def build_index():
           <li><b>Choreography</b> &mdash; built an eight-minute competition piece and taught it to the team.</li>
           <li><b>Competition</b> &mdash; placed 2nd at two qualifiers and reached the national top eight at Origins.</li>
         </ul>
+        <div class="lead-photos">
+          <figure><img src="assets/avahita-1.jpg" alt="Amrita performing a Kathak solo on stage at the Origins dance championship" loading="lazy"></figure>
+          <figure><img src="assets/avahita-2.jpg" alt="UCI Avahita performing a group Kathak formation on stage" loading="lazy"></figure>
+          <figure><img src="assets/avahita-3.jpg" alt="UCI Avahita celebrating with a trophy after a competition" loading="lazy"></figure>
+          <figure><img src="assets/avahita-4.jpg" alt="Three UCI Avahita dancers in a Kathak pose against a gold backdrop" loading="lazy"></figure>
+        </div>
       </div>
     </div>
   </div>
