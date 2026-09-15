@@ -388,6 +388,7 @@ def build_case(p, next_p, back_p=None):
       <div><dt>Where</dt><dd>{e(p['org'])}</dd></div>
       <div><dt>When</dt><dd>{e(p['dates'])}</dd></div>
     </dl>
+    {f'<figure class="case-hero-image"><img src="{e(p["hero_image"])}" alt="{e(p["title"])}" loading="lazy"></figure>' if p.get("hero_image") else ""}
   </div>
 </section>
 

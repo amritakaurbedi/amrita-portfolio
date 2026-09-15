@@ -103,6 +103,7 @@ PROJECTS = [
         "dates": "April 2026 \u2013 June 2026",
         "sort": "2026-04",
         "kind": "Design project",
+        "hero_image": "assets/petalgrip-hero.png",
         "summary": "Redesigned cervical biopsy forceps through CAD, prototyping, simulation, "
                    "and testing, and documented the design decisions, materials, manufacturing "
                    "considerations, test results, and cost analysis in a comprehensive "
