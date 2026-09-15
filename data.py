@@ -139,6 +139,26 @@ PROJECTS = [
         ],
         "outcomes": "Completed and submitted a final forceps prototype supported by a "
                     "comprehensive engineering design report.",
+        "resources": [
+            {
+                "title": "Engineering Design Report",
+                "thumb": "assets/petalgrip-report-thumb.png",
+                "href": "#",
+            },
+            {
+                "title": "CAD Tutorials",
+                "thumb": "assets/petalgrip-cad-thumb.png",
+                "links": [
+                    {"label": "Part 1", "href": "#"},
+                    {"label": "Part 2", "href": "#"},
+                ],
+            },
+            {
+                "title": "Simulation and Motion Study",
+                "thumb": "assets/petalgrip-sim-thumb.png",
+                "href": "#",
+            },
+        ],
         "next": "Ask me about: the trade-off between jaw closing force and handle travel.",
     },
     {

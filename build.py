@@ -315,6 +315,29 @@ def build_case(p, next_p, back_p=None):
         if p.get("challenges")
         else ""
     )
+    def resource_card(r):
+        if r.get("links"):
+            sublinks = "".join(
+                f'<a href="{e(l["href"])}" target="_blank" rel="noopener">{e(l["label"])}</a>'
+                for l in r["links"]
+            )
+            return f"""<div class="resource-card">
+          <img src="{e(r['thumb'])}" alt="{e(r['title'])}" loading="lazy">
+          <p class="resource-title">{e(r['title'])}</p>
+          <div class="resource-links">{sublinks}</div>
+        </div>"""
+        return f"""<a class="resource-card" href="{e(r['href'])}" target="_blank" rel="noopener">
+          <img src="{e(r['thumb'])}" alt="{e(r['title'])}" loading="lazy">
+          <p class="resource-title">{e(r['title'])}</p>
+        </a>"""
+
+    resources_html = (
+        f"""<div class="case-block">
+        <div class="resource-grid">{"".join(resource_card(r) for r in p['resources'])}</div>
+      </div>"""
+        if p.get("resources")
+        else ""
+    )
     outcomes_html = (
         f"""<div class="case-block">
         <h2>Project Outcomes</h2>
@@ -382,6 +405,7 @@ def build_case(p, next_p, back_p=None):
       </div>
       {challenges_html}
       {outcomes_html}
+      {resources_html}
       {result_html}
       {learnings_html}
     </div>
