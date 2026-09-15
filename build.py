@@ -372,9 +372,7 @@ def build_case(p, prev_p):
 
 <section class="case-next">
   <div class="container case-next-inner">
-    <p>Want the one-page version? The resume has it.</p>
     <div class="hero-actions" style="margin:0">
-      <a class="button button-primary" href="{RESUME}" target="_blank" rel="noopener">Resume (PDF)</a>
       {nxt}
     </div>
   </div>
