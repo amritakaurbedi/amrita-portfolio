@@ -305,6 +305,24 @@ def build_index():
 # ------------------------------------------------------------ detail pages
 def build_case(p, prev_p):
     did = "".join(f"<li>{e(b)}</li>" for b in p["did"])
+    background = p.get("background") or [p["context"]]
+    background_html = "".join(f"<p>{e(para)}</p>" for para in background)
+    result_html = (
+        f"""<div class="case-block">
+        <h2>Result</h2>
+        <p>{e(p['result'])}</p>
+      </div>"""
+        if p.get("result")
+        else ""
+    )
+    learnings_html = (
+        f"""<div class="case-block">
+        <h2>Learnings</h2>
+        <p>{e(p['learnings'])}</p>
+      </div>"""
+        if p.get("learnings")
+        else ""
+    )
     nxt = (
         f'<a class="button button-secondary" href="{prev_p["slug"]}.html">Next: {e(prev_p["short"])}</a>'
         if prev_p
@@ -331,18 +349,17 @@ def build_case(p, prev_p):
 <section class="case-body">
   <div class="container case-grid">
     <div>
+      <p class="lede">{e(p['summary'])}</p>
       <div class="case-block">
-        <h2>The short version</h2>
-        <p class="lede">{e(p['summary'])}</p>
+        <h2>Project Background</h2>
+        {background_html}
       </div>
       <div class="case-block">
-        <h2>Context</h2>
-        <p>{e(p['context'])}</p>
-      </div>
-      <div class="case-block">
-        <h2>What I did</h2>
+        <h2>My Contribution</h2>
         <ul class="did">{did}</ul>
       </div>
+      {result_html}
+      {learnings_html}
     </div>
     <aside class="case-aside">
       <h3>Skills used</h3>

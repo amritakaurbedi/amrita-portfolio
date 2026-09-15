@@ -98,7 +98,7 @@ PROJECTS = [
         "slug": "petalgrip",
         "title": "PetalGrip \u2014 redesigned cervical biopsy forceps",
         "short": "PetalGrip",
-        "org": "Cervical biopsy forceps",
+        "org": "UC Irvine",
         "role": "Design Engineer",
         "dates": "April 2026 \u2013 June 2026",
         "sort": "2026-04",
@@ -111,6 +111,14 @@ PROJECTS = [
         "context": "Cervical biopsy forceps have changed very little in decades, and the "
                    "existing designs ask a lot of the clinician's hand. The brief was to rethink "
                    "the jaw and handle geometry without making the device harder to manufacture.",
+        "background": [
+            "SolidWorks course project focused on redesigning cervical biopsy forceps to "
+            "improve tissue capture and retention.",
+            "Cervical biopsies rely on high-quality tissue samples for pathological "
+            "evaluation, making reliable specimen collection critical for early diagnosis.",
+            "Existing forceps can lose tissue during withdrawal and produce variable biopsy "
+            "depth, which can reduce sample quality and lead to repeat procedures.",
+        ],
         "did": [
             "Develop the forceps concept in SolidWorks \u2014 part models, assemblies, and detailed "
             "engineering drawings built for rapid prototyping.",
