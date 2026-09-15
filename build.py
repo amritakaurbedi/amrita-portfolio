@@ -307,6 +307,14 @@ def build_case(p, prev_p):
     did = "".join(f"<li>{e(b)}</li>" for b in p["did"])
     background = p.get("background") or [p["context"]]
     background_html = "".join(f"<p>{e(para)}</p>" for para in background)
+    outcomes_html = (
+        f"""<div class="case-block">
+        <h2>Project Outcomes</h2>
+        <p>{e(p['outcomes'])}</p>
+      </div>"""
+        if p.get("outcomes")
+        else ""
+    )
     result_html = (
         f"""<div class="case-block">
         <h2>Result</h2>
@@ -359,6 +367,7 @@ def build_case(p, prev_p):
         <h2>My Contribution</h2>
         <ul class="did">{did}</ul>
       </div>
+      {outcomes_html}
       {result_html}
       {learnings_html}
     </div>

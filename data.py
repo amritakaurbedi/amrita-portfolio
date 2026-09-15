@@ -131,6 +131,8 @@ PROJECTS = [
             "comprehensive engineering design report covering design rationale, prototyping, "
             "testing, materials, manufacturing, and cost analysis.",
         ],
+        "outcomes": "Completed and submitted a final forceps prototype supported by a "
+                    "comprehensive engineering design report.",
         "next": "Ask me about: the trade-off between jaw closing force and handle travel.",
     },
     {
