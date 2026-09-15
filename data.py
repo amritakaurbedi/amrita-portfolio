@@ -149,8 +149,8 @@ PROJECTS = [
                 "title": "CAD Tutorials",
                 "thumb": "assets/petalgrip-cad-thumb.png",
                 "links": [
-                    {"label": "Part 1", "href": "#"},
-                    {"label": "Part 2", "href": "#"},
+                    {"label": "Parts", "href": "https://www.youtube.com/watch?v=vp34r5lha5o"},
+                    {"label": "Assembly", "href": "https://www.youtube.com/watch?v=iFjUac2jj04"},
                 ],
             },
             {
