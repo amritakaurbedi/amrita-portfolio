@@ -303,7 +303,7 @@ def build_index():
 
 
 # ------------------------------------------------------------ detail pages
-def build_case(p, prev_p):
+def build_case(p, next_p, back_p=None):
     did = "".join(f"<li>{e(b)}</li>" for b in p["did"])
     background = p.get("background") or [p["context"]]
     background_html = "".join(f"<p>{e(para)}</p>" for para in background)
@@ -333,8 +333,13 @@ def build_case(p, prev_p):
     )
     lede_html = f"<p class=\"lede\">{e(p['summary'])}</p>" if not p.get("hide_lede") else ""
     nxt = (
-        f'<a class="button button-secondary" href="{prev_p["slug"]}.html">Next: {e(prev_p["short"])}</a>'
-        if prev_p
+        f'<a class="button button-secondary" href="{next_p["slug"]}.html">Next: {e(next_p["short"])}</a>'
+        if next_p
+        else f'<a class="button button-secondary" href="index.html#work">Back to all work</a>'
+    )
+    prv = (
+        f'<a class="button button-secondary" href="{back_p["slug"]}.html">Previous: {e(back_p["short"])}</a>'
+        if back_p
         else f'<a class="button button-secondary" href="index.html#work">Back to all work</a>'
     )
     return (
@@ -382,6 +387,9 @@ def build_case(p, prev_p):
 <section class="case-next">
   <div class="container case-next-inner">
     <div class="hero-actions" style="margin:0">
+      {prv}
+    </div>
+    <div class="hero-actions" style="margin:0">
       {nxt}
     </div>
   </div>
@@ -403,8 +411,9 @@ def main():
     )
     for i, p in enumerate(ordered):
         nxt = ordered[i + 1] if i + 1 < len(ordered) else None
+        back = ordered[i - 1] if i > 0 else None
         with open(os.path.join(OUT, f"{p['slug']}.html"), "w", encoding="utf-8") as f:
-            f.write(build_case(p, nxt))
+            f.write(build_case(p, nxt, back))
     for p in [p for p in PROJECTS if p.get("industry")]:
         with open(os.path.join(OUT, f"{p['slug']}.html"), "w", encoding="utf-8") as f:
             f.write(build_case(p, None))
