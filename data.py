@@ -119,13 +119,17 @@ PROJECTS = [
             "Existing forceps can lose tissue during withdrawal and produce variable biopsy "
             "depth, which can reduce sample quality and lead to repeat procedures.",
         ],
+        "hide_lede": True,
         "did": [
-            "Develop the forceps concept in SolidWorks \u2014 part models, assemblies, and detailed "
-            "engineering drawings built for rapid prototyping.",
-            "Run iterative design optimisation through SolidWorks simulation, prototype testing, "
-            "and performance evaluation, improving functionality, manufacturability, and ergonomics.",
-            "Author the engineering design report covering design rationale, prototyping method, "
-            "test results, material selection, manufacturing considerations, and cost analysis.",
+            "Developed the forceps concept in SolidWorks, creating detailed part models, "
+            "assemblies, and engineering drawings.",
+            "Independently modeled a foldable net mechanism in SolidWorks to simulate the "
+            "proposed tissue-retention design.",
+            "Helped fabricate prototypes and iterated the design through simulation and "
+            "functional testing.",
+            "Documented the full design process through step-by-step CAD tutorials and a "
+            "comprehensive engineering design report covering design rationale, prototyping, "
+            "testing, materials, manufacturing, and cost analysis.",
         ],
         "next": "Ask me about: the trade-off between jaw closing force and handle travel.",
     },

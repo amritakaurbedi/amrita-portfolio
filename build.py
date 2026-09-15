@@ -323,6 +323,7 @@ def build_case(p, prev_p):
         if p.get("learnings")
         else ""
     )
+    lede_html = f"<p class=\"lede\">{e(p['summary'])}</p>" if not p.get("hide_lede") else ""
     nxt = (
         f'<a class="button button-secondary" href="{prev_p["slug"]}.html">Next: {e(prev_p["short"])}</a>'
         if prev_p
@@ -349,7 +350,7 @@ def build_case(p, prev_p):
 <section class="case-body">
   <div class="container case-grid">
     <div>
-      <p class="lede">{e(p['summary'])}</p>
+      {lede_html}
       <div class="case-block">
         <h2>Project Background</h2>
         {background_html}
