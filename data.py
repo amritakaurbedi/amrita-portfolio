@@ -131,6 +131,12 @@ PROJECTS = [
             "comprehensive engineering design report covering design rationale, prototyping, "
             "testing, materials, manufacturing, and cost analysis.",
         ],
+        "challenges": [
+            "Modeling a foldable net mechanism that could open, collapse, and fit within "
+            "the forceps geometry.",
+            "Determining how to securely integrate the net into the physical forceps "
+            "prototype.",
+        ],
         "outcomes": "Completed and submitted a final forceps prototype supported by a "
                     "comprehensive engineering design report.",
         "next": "Ask me about: the trade-off between jaw closing force and handle travel.",
