@@ -143,7 +143,7 @@ PROJECTS = [
             {
                 "title": "Engineering Design Report",
                 "thumb": "assets/petalgrip-report-thumb.png",
-                "href": "#",
+                "href": "assets/PetalGrip_Design_Report.pdf",
             },
             {
                 "title": "CAD Tutorials",
@@ -156,7 +156,7 @@ PROJECTS = [
             {
                 "title": "Simulation and Motion Study",
                 "thumb": "assets/petalgrip-sim-thumb.png",
-                "href": "#",
+                "href": "https://youtu.be/lUmuVqZAFyg",
             },
         ],
         "next": "Ask me about: the trade-off between jaw closing force and handle travel.",
