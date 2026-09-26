@@ -382,13 +382,17 @@ def build_case(p, next_p, back_p=None):
   <div class="container">
     <a class="back-link" href="index.html#work">&larr; All work</a>
     <p class="meta">{e(p['kind'])}</p>
-    <h1>{e(p['title'])}</h1>
-    <dl class="case-meta">
-      <div><dt>Role</dt><dd>{e(p['role'])}</dd></div>
-      <div><dt>Where</dt><dd>{e(p['org'])}</dd></div>
-      <div><dt>When</dt><dd>{e(p['dates'])}</dd></div>
-    </dl>
-    {f'<figure class="case-hero-image"><img src="{e(p["hero_image"])}" alt="{e(p["title"])}" loading="lazy"></figure>' if p.get("hero_image") else ""}
+    <div class="case-hero-top">
+      <div class="case-hero-text">
+        <h1>{e(p['title'])}</h1>
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>{e(p['role'])}</dd></div>
+          <div><dt>Where</dt><dd>{e(p['org'])}</dd></div>
+          <div><dt>When</dt><dd>{e(p['dates'])}</dd></div>
+        </dl>
+      </div>
+      {f'<figure class="case-hero-image"><img src="{e(p["hero_image"])}" alt="{e(p["title"])}" loading="lazy"></figure>' if p.get("hero_image") else ""}
+    </div>
   </div>
 </section>
 
@@ -410,11 +414,13 @@ def build_case(p, next_p, back_p=None):
       {result_html}
       {learnings_html}
     </div>
-    <aside class="case-aside">
-      <h3>Skills used</h3>
-      {tags_html(p['skills'])}
-      <p class="case-ask">{e(p['next'])}</p>
-    </aside>
+    <div class="case-aside-col">
+      <aside class="case-aside">
+        <h3>Skills used</h3>
+        {tags_html(p['skills'])}
+      </aside>
+      {"".join(f'<figure class="case-aside-image"><img src="{e(src)}" alt="{e(p["title"])}" loading="lazy"></figure>' for src in p.get("aside_images", []))}
+    </div>
   </div>
 </section>
 

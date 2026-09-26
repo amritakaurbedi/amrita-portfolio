@@ -104,6 +104,7 @@ PROJECTS = [
         "sort": "2026-04",
         "kind": "Design project",
         "hero_image": "assets/petalgrip-hero.png",
+        "aside_images": ["assets/petalgrip-sim-detail.png", "assets/petalgrip-sim-detail-2.png"],
         "summary": "Redesigned cervical biopsy forceps through CAD, prototyping, simulation, "
                    "and testing, and documented the design decisions, materials, manufacturing "
                    "considerations, test results, and cost analysis in a comprehensive "
