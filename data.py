@@ -104,7 +104,11 @@ PROJECTS = [
         "sort": "2026-04",
         "kind": "Design project",
         "hero_image": "assets/petalgrip-hero.png",
-        "aside_images": ["assets/petalgrip-sim-detail.png", "assets/petalgrip-sim-detail-2.png"],
+        "aside_images": [
+            "assets/petalgrip-sim-detail.png",
+            "assets/petalgrip-sim-detail-2.png",
+            "assets/petalgrip-sim-detail-3.png",
+        ],
         "summary": "Redesigned cervical biopsy forceps through CAD, prototyping, simulation, "
                    "and testing, and documented the design decisions, materials, manufacturing "
                    "considerations, test results, and cost analysis in a comprehensive "
@@ -165,7 +169,7 @@ PROJECTS = [
     },
     {
         "slug": "laparoscopic-trainer",
-        "title": "Turning a benchtop test rig into a teaching lab",
+        "title": "Laparoscopic Trainer Lab Module",
         "short": "Laparoscopic Trainer Lab Module",
         "org": "UCI \u00d7 Applied Medical",
         "role": "Team Lead",
@@ -177,19 +181,45 @@ PROJECTS = [
                    "trainers to assess performance against ISO 7741, and published the work in "
                    "the American Society for Engineering Education (ASEE) conference paper.",
         "skills": ["expdesign", "benchtop", "regcompliance", "dataanalysis", "techwriting"],
+        "hide_lede": True,
         "context": "A test protocol is only useful if someone else can repeat it. This project "
                    "started as force measurement on laparoscopic instruments and ended as an "
                    "ABET-accredited teaching module \u2014 which meant every step had to survive "
                    "being handed to a student who had never seen the rig.",
-        "did": [
-            "Design and run benchtop testing protocols quantifying laparoscopic tool\u2013tissue "
-            "interaction forces, using Arduino-based data acquisition.",
-            "Apply ISO 7741 and FDA 510(k) design-control principles to evaluate device "
-            "performance and safety margins.",
-            "Co-author a published ASEE conference paper, and write the SOPs, instructional "
-            "materials, and quantitative analyses for an ABET-accredited biomedical engineering "
-            "laboratory course.",
+        "background": [
+            "UCI lacked an undergraduate BME lab experience focused on regulatory compliance "
+            "and the testing used to demonstrate that a medical device meets a standard.",
+            "Developed a hands-on module for an ABET-accredited BME lab course to introduce "
+            "students to experimental design, engineering testing, and regulatory evaluation.",
         ],
+        "did": [
+            "Designed and executed Arduino-based benchtop protocols to quantify laparoscopic "
+            "tool\u2013tissue interaction forces and developed MATLAB analyses to interpret the "
+            "resulting data.",
+            "Created SOPs, instructional materials, and quantitative analyses for the lab module.",
+            "Piloted the module with 20+ undergraduate students, tracking task-completion time "
+            "and collecting survey feedback to identify usability issues and refine the lab "
+            "experience before course implementation.",
+            "Co-authored the conference paper documenting the module and its experimental and "
+            "regulatory-testing framework.",
+        ],
+        "result": [
+            "Refined the lab module through pilot testing and student feedback before "
+            "classroom implementation.",
+            "Confirmed that the laparoscopic trainers met the applicable ISO 7741 performance "
+            "requirements through quantitative testing.",
+            "Module planned for implementation in the BME laboratory course this academic year.",
+            "Published the work in an ASEE conference paper.",
+        ],
+        "learnings": [
+            "Reading and understanding technical standards well enough to apply them to testing.",
+            "Learning how to turn a written standard into an actual test plan.",
+            "Designing a lab that students with different levels of experience could follow.",
+        ],
+        "publication": {
+            "label": "Published ASEE Conference Paper",
+            "href": "https://peer.asee.org/work-in-progress-industry-driven-laboratory-module-using-laparoscopic-trainers-for-undergraduate-biomedical-engineering-education",
+        },
         "next": "Ask me about: what breaks when you hand your protocol to a stranger.",
     },
     {

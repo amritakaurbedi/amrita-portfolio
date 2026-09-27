@@ -346,20 +346,38 @@ def build_case(p, next_p, back_p=None):
         if p.get("outcomes")
         else ""
     )
+    def result_body(result):
+        if isinstance(result, list):
+            return f'<ul class="did">{"".join(f"<li>{e(r)}</li>" for r in result)}</ul>'
+        return f"<p>{e(result)}</p>"
     result_html = (
         f"""<div class="case-block">
-        <h2>Result</h2>
-        <p>{e(p['result'])}</p>
+        <h2>{"Results" if isinstance(p['result'], list) else "Result"}</h2>
+        {result_body(p['result'])}
       </div>"""
         if p.get("result")
         else ""
     )
+    def learnings_body(learnings):
+        if isinstance(learnings, list):
+            return f'<ul class="did">{"".join(f"<li>{e(l)}</li>" for l in learnings)}</ul>'
+        return f"<p>{e(learnings)}</p>"
     learnings_html = (
         f"""<div class="case-block">
-        <h2>Learnings</h2>
-        <p>{e(p['learnings'])}</p>
+        <h2>Key takeaways</h2>
+        {learnings_body(p['learnings'])}
       </div>"""
         if p.get("learnings")
+        else ""
+    )
+    publication_html = (
+        f"""<div class="case-block">
+        <div class="publication-card">
+          <p class="publication-title">{e(p['publication']['label'])}</p>
+          <a class="button button-primary" href="{e(p['publication']['href'])}" target="_blank" rel="noopener">Read paper</a>
+        </div>
+      </div>"""
+        if p.get("publication")
         else ""
     )
     lede_html = f"<p class=\"lede\">{e(p['summary'])}</p>" if not p.get("hide_lede") else ""
@@ -387,7 +405,6 @@ def build_case(p, next_p, back_p=None):
         <h1>{e(p['title'])}</h1>
         <dl class="case-meta">
           <div><dt>Role</dt><dd>{e(p['role'])}</dd></div>
-          <div><dt>Where</dt><dd>{e(p['org'])}</dd></div>
           <div><dt>When</dt><dd>{e(p['dates'])}</dd></div>
         </dl>
       </div>
@@ -413,6 +430,7 @@ def build_case(p, next_p, back_p=None):
       {resources_html}
       {result_html}
       {learnings_html}
+      {publication_html}
     </div>
     <div class="case-aside-col">
       <aside class="case-aside">
