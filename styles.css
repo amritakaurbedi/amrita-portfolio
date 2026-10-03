@@ -349,9 +349,9 @@ p  { margin-top: 0; }
 .did { margin: 0; padding: 0; list-style: none; }
 .did li { position: relative; margin-bottom: 15px; padding-left: 26px; color: var(--ink); }
 .did li::before { position: absolute; top: .62em; left: 0; width: 11px; height: 1px; background: var(--coral); content: ""; }
-.case-aside { border: 1px solid var(--line); border-radius: var(--r-card); background: var(--cream); padding: 24px; }
+.case-aside { border: 1px solid var(--line); border-radius: var(--r-card); background: var(--cream); padding: 20px 24px; }
 .case-aside h3 { font-family: var(--body); font-size: .95rem; font-weight: 550; letter-spacing: 0; }
-.case-aside .tags { margin-bottom: 22px; }
+.case-aside .tags { margin-bottom: 0; }
 
 .resource-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .resource-card { display: block; border: 1px solid var(--line); border-radius: var(--r-card); overflow: hidden; background: var(--white); text-decoration: none; color: var(--ink); transition: .16s; }

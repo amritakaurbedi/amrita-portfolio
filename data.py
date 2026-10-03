@@ -56,6 +56,7 @@ SKILL_GROUPS = [
     ("Business & Entrepreneurship", [
         ("entrepreneurship", "Entrepreneurship"),
         ("bizstrategy", "Business Strategy"),
+        ("competitive", "Competitive Analysis"),
     ]),
 ]
 
@@ -69,28 +70,75 @@ PROJECTS = [
     {
         "slug": "applied-medical",
         "industry": True,
-        "title": "Quality engineering in a regulated device plant",
+        "title": "Quality Engineering Internship at Applied Medical",
+        "hide_role": True,
+        "nav_label": "Applied Medical Internship",
+        "hide_lede": True,
+        "hero_image": "assets/applied-medical-detail-1.png",
+        "aside_images": [
+            "assets/applied-medical-detail-2.png",
+            "assets/applied-medical-detail-3.png",
+            "assets/applied-medical-detail-4.png",
+        ],
         "short": "Applied Medical",
         "org": "Applied Medical",
-        "role": "Quality Systems Engineer Intern",
-        "dates": "June 2026 \u2013 Present",
+        "role": "Quality Engineering Intern",
+        "dates": "June 2026 \u2013 September 2026",
         "sort": "2026-06",
         "kind": "Internship",
         "summary": "Leading two CAPA investigations end to end, and redesigning a peel-test fixture "
                    "so package seal-strength results stop drifting between operators.",
-        "skills": ["solidworks", "drawings", "validation", "capa", "rca", "xfn", "presenting", "techcomm"],
-        "context": "Applied Medical builds surgical devices under ISO 13485 and 21 CFR Part 820. "
-                   "Quality engineering is where a suspected problem becomes a documented decision: "
-                   "you have to show what went wrong, why, and what evidence says the fix worked.",
+        "skills": ["capa", "rca", "solidworks", "drawings", "competitive"],
+        "background": [
+            "Worked within Quality Systems in a regulated medical-device environment, with most "
+            "of the internship focused on CAPA investigations.",
+        ],
+        "context": "Worked within Quality Systems in a regulated medical-device environment, with "
+                   "most of the internship focused on CAPA investigations.",
         "did": [
-            "Perform risk assessments and write the technical justifications for opening Corrective "
-            "and Preventive Actions, against ISO 13485 and 21 CFR Part 820.",
-            "Lead two CAPA investigations through document review, root cause analysis, and "
-            "cross-functional process evaluation, then present findings and corrective-action "
-            "recommendations to senior management.",
-            "Redesign a package peel-test fixture in SolidWorks, produce the engineering drawings, "
-            "and fabricate and validate the design to make FFS package seal-strength testing more "
-            "consistent and repeatable.",
+            "Developed investigation plans for two cross-functional CAPAs, met with process "
+            "owners and stakeholders, reviewed technical documentation, and evaluated evidence to "
+            "determine likely root causes.",
+            "Built an I-MR chart to evaluate failure frequency and process behavior, wrote CAPA "
+            "investigation proposals, presented findings to senior leadership, and incorporated "
+            "feedback into the investigation approach.",
+            "Collaborated with another intern to redesign a package peel-test fixture in "
+            "SolidWorks to better reflect real-world package opening; created engineering "
+            "drawings and completed an initial prototype/testing round with the Packaging team.",
+            "Supported Clinical Development by reviewing and verifying competitor claims across "
+            "energy-device portfolios.",
+            "Participated in weekly automation learning sessions covering PLCs, HMIs, ladder "
+            "logic, robotics, and industrial controls.",
+        ],
+        "result": [
+            "One CAPA was closed after the evidence supported a non-systemic issue, while the "
+            "second progressed into corrective action after a procedural gap was identified.",
+            "Developed a preliminary process-improvement plan for the second CAPA, outlining "
+            "potential corrective steps for continued validation and implementation after the "
+            "internship.",
+            "Presented CAPA findings and peel-test fixture development to cross-functional "
+            "stakeholders and senior leadership.",
+            "Delivered a redesigned fixture concept, engineering drawings, and initial prototype "
+            "for continued evaluation by the Packaging team.",
+        ],
+        "learnings": [
+            "Learned to go beyond the documentation, speak with the people closest to the "
+            "process, and follow the evidence even when it challenged the original assumption.",
+            "Gained familiarity with ISO 13485 and 21 CFR Part 820 and how those requirements "
+            "shape quality-system investigations and decision-making.",
+            "Gained exposure to industrial controls, an area I had no prior background in and "
+            "became interested in learning more about.",
+        ],
+"home_did": [
+            "Led two cross-functional CAPA investigations under ISO 13485 and 21 CFR Part 820, "
+            "using root cause analysis, process evaluation, and statistical monitoring to support "
+            "closure of one CAPA and corrective action for another.",
+            "Redesigned a package peel-test fixture in SolidWorks to better replicate real-world "
+            "package opening, then created engineering drawings and tested an initial prototype "
+            "for repeatability and usability.",
+            "Supported Clinical Development by reviewing and verifying 70+ competitor claims for "
+            "energy devices across manufacturer, clinical, and technical sources, organizing the "
+            "findings into a structured comparison for internal use.",
         ],
         "next": "Ask me about: how you decide a root cause is actually the root cause.",
     },
@@ -176,6 +224,11 @@ PROJECTS = [
         "dates": "January 2026 \u2013 June 2026",
         "sort": "2026-01",
         "kind": "Collaboration",
+        "hero_image": "assets/laparoscopic-trainer-detail.png",
+        "aside_images": [
+            "assets/laparoscopic-trainer-detail-2.png",
+            "assets/laparoscopic-trainer-detail-3.png",
+        ],
         "summary": "Created a biomedical engineering lab module that teaches experimental design "
                    "and regulatory compliance through hands-on device testing, using laparoscopic "
                    "trainers to assess performance against ISO 7741, and published the work in "
@@ -209,7 +262,7 @@ PROJECTS = [
             "Confirmed that the laparoscopic trainers met the applicable ISO 7741 performance "
             "requirements through quantitative testing.",
             "Module planned for implementation in the BME laboratory course this academic year.",
-            "Published the work in an ASEE conference paper.",
+            "Published the work in the American Society for Engineering Education (ASEE) conference paper.",
         ],
         "learnings": [
             "Reading and understanding technical standards well enough to apply them to testing.",

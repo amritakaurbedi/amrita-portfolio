@@ -143,7 +143,7 @@ def build_index():
     industry_meta = ""
     industry_html = ""
     for p in sorted(industry, key=lambda x: x["sort"], reverse=True):
-        did = "".join(f"<li>{e(b)}</li>" for b in p["did"])
+        did = "".join(f"<li>{e(b)}</li>" for b in p.get("home_did", p["did"]))
         industry_meta = f"{e(p['role'])} &middot; {e(p['dates'])}"
         skill_links = "".join(
             f'<span class="tag">{e(SKILL_NAMES[s])}</span>' for s in p["skills"]
@@ -151,7 +151,7 @@ def build_index():
         industry_html += f"""
     <div class="lead-grid industry-grid">
       <div class="industry-photo">
-        <img src="assets/applied-medical-amrita.png" alt="Amrita at the Applied Medical office" width="1050" height="1400" />
+        <img src="assets/applied-medical-amrita.png" alt="Amrita at the Applied Medical office" width="1050" height="1235" />
       </div>
       <div class="lead-copy">
         <ul class="lead-list">{did}</ul>
@@ -387,10 +387,12 @@ def build_case(p, next_p, back_p=None):
         else f'<a class="button button-secondary" href="index.html#work">Back to all work</a>'
     )
     prv = (
-        f'<a class="button button-secondary" href="{back_p["slug"]}.html">Previous: {e(back_p["short"])}</a>'
+        f'<a class="button button-secondary" href="{back_p["slug"]}.html">Previous: {e(back_p.get("nav_label", back_p["short"]))}</a>'
         if back_p
         else f'<a class="button button-secondary" href="index.html#work">Back to all work</a>'
     )
+    if not next_p and not back_p:
+        nxt = ""  # both buttons would be "Back to all work"; keep the left one
     return (
         head(f"{e(p['short'])} &mdash; Amrita Kaur Bedi", e(p["summary"]))
         + header(home=False)
@@ -404,7 +406,7 @@ def build_case(p, next_p, back_p=None):
       <div class="case-hero-text">
         <h1>{e(p['title'])}</h1>
         <dl class="case-meta">
-          <div><dt>Role</dt><dd>{e(p['role'])}</dd></div>
+          {"" if p.get("hide_role") else f"<div><dt>Role</dt><dd>{e(p['role'])}</dd></div>"}
           <div><dt>When</dt><dd>{e(p['dates'])}</dd></div>
         </dl>
       </div>
@@ -462,6 +464,7 @@ def build_case(p, next_p, back_p=None):
 def main():
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
         f.write(build_index())
+    industry = [p for p in PROJECTS if p.get("industry")]
     ordered = sorted(
         [p for p in PROJECTS if not p.get("industry")],
         key=lambda x: x["sort"],
@@ -469,12 +472,12 @@ def main():
     )
     for i, p in enumerate(ordered):
         nxt = ordered[i + 1] if i + 1 < len(ordered) else None
-        back = ordered[i - 1] if i > 0 else None
+        back = ordered[i - 1] if i > 0 else industry[-1] if industry else None
         with open(os.path.join(OUT, f"{p['slug']}.html"), "w", encoding="utf-8") as f:
             f.write(build_case(p, nxt, back))
-    for p in [p for p in PROJECTS if p.get("industry")]:
+    for p in industry:
         with open(os.path.join(OUT, f"{p['slug']}.html"), "w", encoding="utf-8") as f:
-            f.write(build_case(p, None))
+            f.write(build_case(p, ordered[0] if ordered else None))
     print("built:", ["index.html"] + [f"{p['slug']}.html" for p in PROJECTS])
 
 
