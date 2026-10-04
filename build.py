@@ -333,6 +333,7 @@ def build_case(p, next_p, back_p=None):
 
     resources_html = (
         f"""<div class="case-block">
+        {f'<h2>{e(p["resources_heading"])}</h2>' if p.get("resources_heading") else ""}
         <div class="resource-grid">{"".join(resource_card(r) for r in p['resources'])}</div>
       </div>"""
         if p.get("resources")
@@ -429,10 +430,11 @@ def build_case(p, next_p, back_p=None):
       </div>
       {challenges_html}
       {outcomes_html}
-      {resources_html}
+      {resources_html if not p.get("resources_last") else ""}
       {result_html}
       {learnings_html}
       {publication_html}
+      {resources_html if p.get("resources_last") else ""}
     </div>
     <div class="case-aside-col">
       <aside class="case-aside">

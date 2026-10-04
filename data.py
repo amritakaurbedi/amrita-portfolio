@@ -337,6 +337,14 @@ PROJECTS = [
         "slug": "ultrascan-pro",
         "title": "UltraScan Pro — an Arduino ultrasonic imaging system",
         "short": "UltraScan Pro",
+        "hero_image": "assets/ultrascan-pro-hero.png",
+        "hide_lede": True,
+        "resources_heading": "Project Outcomes",
+        "resources_last": True,
+        "aside_images": [
+            "assets/ultrascan-pro-detail.png",
+            "assets/ultrascan-pro-detail-2.png",
+        ],
         "org": "Arduino ultrasonic imaging",
         "role": "Team Lead",
         "dates": "September 2025 – December 2025",
@@ -346,17 +354,49 @@ PROJECTS = [
                    "system that converted sensor measurements into a real-time 180° spatial map "
                    "and earned 2nd place out of 19 teams.",
         "skills": ["arduino", "matlab", "daq", "dataviz", "leadership"],
-        "context": "The goal was to reproduce the core idea of ultrasound imaging — sweep a "
-                   "beam, time the echoes, build a picture — with hobby hardware, and to lead a "
-                   "four-person team through it on a fixed deadline.",
+        "context": "Arduino-based course project focused on microcontrollers, sensor "
+                   "integration, and engineering design.",
+        "background": [
+            "Arduino-based course project focused on microcontrollers, sensor integration, "
+            "and engineering design.",
+            "Developed an ultrasonic scanning system with MATLAB visualization to map nearby "
+            "objects in real time.",
+        ],
         "did": [
-            "Direct a 4-member engineering team to design and prototype a simplified "
-            "ultrasound-style ranging system.",
-            "Integrate ultrasonic sensors, servo motor control, an LCD interface, and real-time "
-            "MATLAB visualisation to generate a 180° spatial map of surrounding objects.",
-            "Develop interactive feedback features — LED indicators and motion alerts — "
-            "to make the output easier to read and interpret.",
-            "Deliver a final solution that placed 2nd out of 19 teams.",
+            "Led a four-person team and coordinated integration across the ultrasonic sensor, "
+            "servo motor, LCD interface, and MATLAB visualization.",
+            "Coded the LCD interface, LED indicators, and motion-alert features.",
+            "Coordinated subsystem testing and iteration as the team moved from individually "
+            "functioning components to a fully integrated prototype.",
+            "Helped troubleshoot a failed stepper-motor integration and supported the "
+            "transition to a servo-based design to keep the project moving.",
+        ],
+        "result": [
+            "Built a functional prototype that generated a real-time 180\u00b0 spatial map of "
+            "surrounding objects.",
+            "Adapted the design after the original stepper-motor approach could not be "
+            "integrated reliably.",
+            "Placed 2nd out of 19 teams in the course project.",
+        ],
+        "learnings": [
+            "Learned the importance of rapid prototyping and early integration for identifying "
+            "system-level issues sooner.",
+            "Learned to stay flexible when an engineering approach does not work as intended "
+            "and to adjust the design based on testing.",
+            "Strengthened technical leadership by keeping a small team aligned around subsystem "
+            "interfaces, testing, and a shared final system.",
+        ],
+        "resources": [
+            {
+                "title": "UltraScan Pro Final Presentation",
+                "thumb": "assets/ultrascan-pro-presentation-thumb.png",
+                "href": "https://docs.google.com/presentation/d/1b4-uhMS6TtqIDDbv74yqEi-dHblYmlK9EIBwr0Ur4BE/edit?usp=sharing",
+            },
+            {
+                "title": "Video Demo of Project",
+                "thumb": "assets/ultrascan-pro-video-thumb.jpg",
+                "href": "https://drive.google.com/file/d/1-zwxLVknSNDsG_WgQpFIhTNE6BJzYMgk/view",
+            },
         ],
         "next": "Ask me about: what limits the angular resolution of a servo-swept sensor.",
     },
